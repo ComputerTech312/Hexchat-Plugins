@@ -13,6 +13,16 @@ SLAP_MESSAGES = [
 "slaps {nick} with a rolling pin",
 "slaps {nick} with a newspaper",
 "slaps {nick} around a bit with a small trout",
+"slaps {nick} around a bit with a soggy newspaper",
+"slaps {nick} around the face with a baguette",
+"slaps {nick} around a bit with a wet noodle",
+"slaps {nick} around a bit with a foam sword",
+"slaps {nick} around a bit with a banana peel",
+"slaps {nick} with a copy of the IRC rulebook",
+"slaps {nick} with a fresh baguette",
+"slaps {nick} with a pillowy soft roll of bread dough",
+"slaps {nick} with a bundle of herbs and spices",
+"slaps {nick} with a jar of pickles",
 ]
 
 def slap_command(word, word_eol, userdata):
