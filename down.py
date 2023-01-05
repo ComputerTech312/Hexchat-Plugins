@@ -22,4 +22,4 @@ def down_callback(word, word_eol, userdata):
     
     return hexchat.EAT_ALL
 
-hexchat.hook_command("DOWN", down_callback)
+hexchat.hook_command("DOWN", down_callback) 
