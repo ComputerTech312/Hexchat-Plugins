@@ -1,0 +1,33 @@
+import hexchat
+ 
+__module_name__ = "Highlight Notifier"
+__module_version__ = "1.0"
+__module_description__ = "Notifies when someone highlights you"
+ 
+def _print_context(msg):
+    name = '(highlights)'
+    context = hexchat.find_context(hexchat.get_info("network"), name)
+    if context is None:
+        hexchat.command(f'QUERY -nofocus {name}')
+        context = hexchat.find_context(hexchat.get_info("network"), name)
+    if context:
+        context.prnt(msg)
+    else:
+        print("Error: Could not open query window")
+ 
+def on_highlight(word, word_eol, userdata):
+    nick = word[0]
+    chan = hexchat.get_info("channel")
+    network = hexchat.get_info("network")
+    message = f"{nick} highlighted you in {chan} on {network}"
+    _print_context(message)
+    return hexchat.EAT_NONE
+    
+def on_unload(userdata):
+    hexchat.prnt("Highlight Notifier unloaded")
+ 
+hexchat.hook_print("Channel Msg Hilight", on_highlight)
+
+hexchat.hook_unload(on_unload)
+
+hexchat.prnt("Highlight Notifier loaded")
