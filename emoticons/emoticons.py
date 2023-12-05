@@ -6,7 +6,7 @@ __module_version__ = "1.0"
 __module_description__ = "Sends a random emoji or ASCII art from a file to the chat"
 
 # Path to your file containing the emojis and ASCII arts
-file_path = "/home/colby/.config/hexchat/addons/emoticons.tsv"
+file_path = "/your/path/here/hexchat/addons/emoticons.tsv"
 
 def load_emojis_from_file():
     emojis = []
