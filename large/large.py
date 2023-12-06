@@ -1,5 +1,11 @@
 import hexchat
-from art import text2art
+import sys
+
+# Add the lib directory to the system path
+sys.path.append('/your/path/here/.config/hexchat/addons/lib-large')
+
+# Now import text2art from the art library inside the lib folder
+from art61.art import text2art
 
 __module_name__ = "ASCII Art Text"
 __module_version__ = "1.0"
