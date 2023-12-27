@@ -20,6 +20,36 @@ SLAP_MESSAGES = [
 "slaps {nick} with a wet noodle",
 "sends {nick} flying with a mighty slap",
 "rounds up a group of seagulls to attack {nick} with a series of sharp pecks and slaps",
+"slaps {nick} with a rubber chicken"
+"gives {nick} a gentle poke"
+"smacks {nick} with a foam sword"
+"hits {nick} with a balloon animal"
+"administers a facepalm to {nick}"
+"pokes {nick} with a marshmallow on a stick"
+"whacks {nick} with a pillow"
+"gently spanks {nick} with a feather duster"
+"playfully taps {nick} with a confetti-filled balloon"
+"throws a handful of virtual glitter at {nick}"
+"smacks {nick} with a pool noodle"
+"pats {nick} on the back with a virtual cookie"
+"slaps {nick} with a slice of pizza"
+"swats at {nick} with a flyswatter"
+"gives {nick} a virtual high-five"
+"hands {nick} a bouquet of virtual flowers"
+"playfully boops {nick} on the nose"
+"slaps {nick} with a pancake"
+"hits {nick} with a rubber duck"
+"administers a light karate chop to {nick}"
+"throws a soft plush toy at {nick}"
+"smacks {nick} with a rolled-up newspaper"
+"pokes {nick} with a banana"
+"gently taps {nick} with a paper fan"
+"slaps {nick} with a glove"
+"hands {nick} a virtual trophy"
+"gives {nick} a congratulatory pat on the back"
+"throws a handful of virtual confetti at {nick}"
+"administers a playful slap to {nick}"
+"smacks {nick} with a cushion"
 ]
 
 def slap_command(word, word_eol, userdata):
