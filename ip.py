@@ -2,7 +2,7 @@ import hexchat
 import requests
 
 __module_name__ = "IP Lookup"
-__module_author__ = "Assistant"
+__module_author__ = "ComputerTech"
 __module_version__ = "1.0"
 
 def ip_lookup(ip, fields):
