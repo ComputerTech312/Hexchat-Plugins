@@ -34,7 +34,8 @@ def get_now_playing(word, word_eol, userdata):
         return hexchat.EAT_ALL
 
     state = data.get('state')
-    now_playing = data.get('information', {}).get('category', {}).get('meta', {}).get('title')
+    meta = data.get('information', {}).get('category', {}).get('meta', {})
+    now_playing = meta.get('title') or meta.get('filename')
     if now_playing:
         now_playing = os.path.splitext(now_playing)[0]  # Remove any file extension from the song name
     length = format_time(data.get('length', 0))
